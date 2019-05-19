@@ -1,0 +1,62 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<title>Untitled Document</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+
+<SCRIPT LANGUAGE="JavaScript">
+<!-- Begin
+extArray = new Array(".gif", ".jpg", ".png");
+
+function LimitAttach(form, file) {
+allowSubmit = false;
+if (!file) return;
+while (file.indexOf("\\") != -1)
+file = file.slice(file.indexOf("\\") + 1);
+ext = file.slice(file.indexOf(".")).toLowerCase();
+for (var i = 0; i < extArray.length; i++) {
+if (extArray[i] == ext) { allowSubmit = true; break; }
+}
+if (allowSubmit) form.submit();
+else
+alert("Please only upload files that end in types:  " 
++ (extArray.join("  ")) + "\nPlease select a new "
++ "file to upload and submit again.");
+}
+//  End -->
+</script>
+
+<style type="text/css">
+<!--
+body {
+	background-color: #99CCCC;
+}
+.style23 {
+	font-size: 10pt;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style24 {font-family: Arial, Helvetica, sans-serif}
+-->
+</style></head>
+
+<body>
+<center>
+<span class="style24">Please upload only images that end in:</span>
+<script>
+document.write(extArray.join("  "));
+</script>
+<p><span class="style23">It's preferable that file size is less than 100kB.</span>
+<p>
+  
+<form method=post name=upform action="upload.cfm" enctype="multipart/form-data">
+<input type=file name=uploadfile>
+&nbsp;
+<input type=button name="Submit" value="Upload" onclick="LimitAttach(this.form, this.form.uploadfile.value)">
+</form>
+
+
+</center>
+<p>
+</body>
+</html>

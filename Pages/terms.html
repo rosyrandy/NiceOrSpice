@@ -1,0 +1,443 @@
+<html>
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="generator" content="Adobe GoLive 4">
+	<title>Welcome to Nice or Spice</title>
+	<csscriptdict>
+	<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+	</csscriptdict><csactiondict>
+	<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button7',/*URL*/'../images/servblu1.gif',/*URL*/'../images/servblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button8',/*URL*/'../images/equipblu1.gif',/*URL*/'../images/equipblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button9',/*URL*/'../images/aboutblu1.gif',/*URL*/'../images/aboutblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button10',/*URL*/'../images/contblu1.gif',/*URL*/'../images/contblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button11',/*URL*/'../images/homeblu1.gif',/*URL*/'../images/homeblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button6',/*URL*/'../images/home.gif',/*URL*/'../images/home2.gif',/*URL*/'','');
+
+// --></script>
+	</csactiondict>
+	<style type="text/css">
+	<!--
+body,td,th {
+	color: #FFFFFF;
+}
+-->
+	</style>
+	<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+    </script>
+	<style type="text/css">
+<!--
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFCC;
+	background-image: url();
+}
+.style10 {font-size: xx-small}
+.style17 {color: #FFFFFF}
+.style43 {color: #FFCCFF; font-size: xx-small; font-family: Arial, Helvetica, sans-serif; }
+.style44 {color: #990000}
+.style49 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFCCFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.style50 {color: #333333}
+.style51 {
+	font-size: 24px;
+	font-family: "Times New Roman", Times, serif;
+}
+.style53 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+.style54 {color: #FFFFCC}
+.style58 {font-size: 14px}
+.style59 {
+	font-size: 14px;
+	font-weight: bold;
+}
+-->
+    </style></head>
+
+	<body onload="CSScriptInit();">
+		<div align="left">	
+		  <div id="Layer1" style="position:absolute; width:1184px; height:114px; z-index:1; left: 1px; top: 12px; background-image: url(../images/genericheader2.jpg); layer-background-image: url(../images/GenericHeader2.jpg); border: 1px none #000000;">
+		    <p><span class="style10">.</span></p>
+		    <p><span class="style10">.</span></p>
+		    <p><span class="style10">.</span></p>
+		    <p><span class="style17">. . . . .  .. . . . . . . . . . . . . . . .. . . .. . . . . . .. . .. . . . . .. . . . . . . .. .. . . <span class="style44">. . . . . . . . . .</span> </span><span class="style2"><span class="style49">|</span> <a href="contact.html" class="style43"> Contact Us</a> <span class="style49">|</span> <a href="join.html" class="style43"> Subscribe</a> <span class="style49">|</span> <a href="loginpass.html" class="style43">Log In</a> <span class="style49">|</span> <a href="../index.html" class="style43">HOME</a> <span class="style49">|</span></p>
+	      </div>
+		</div>
+		<center>
+			<p>
+			</p>
+        </center>
+		<p>
+		<hr size="5">
+		</p>
+		<p>&nbsp;</p>
+        <div id="Layer2" style="position:absolute; width:710px; height:612px; z-index:2; left: 23px; top: 176px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000;">
+          <div align="justify">
+            <pre class="style50 style51"><strong>
+
+<span class="style58">     TERMS OF USE FOR NiceorSpice&reg; SERVICES<br>   
+     THIS AGREEMENT WAS LAST UPDATED ON SEPTEMBER 30TH, 2003<br>     When you sign up for any service within the NiceorSpice&reg; you agree to all of the terms and conditions
+     of this Agreement.<br>     Please read the following terms and conditions carefully, as they form the agreement between us. If 
+     you do not agree to these terms and conditions, you may not use the service and should not proceed to
+     register. By using the Service after September 30, 2003 you are agreeing to be bound by this Agreement,
+     including all amendments made to date.<br>     
+     User Agreement<br> <br>     This Agreement constitutes your agreement with APC, Inc. (&quot;NiceorSpice&quot;) with respect to your use of
+     the Service. You must agree to abide by all of the terms and conditions contained in this Agreement in
+     order to become or remain an authorized user of the Service. As used in this Agreement, &quot;we&quot; and &quot;us&quot;
+     means NiceorSpice or any successor or assign of NiceorSpice
+
+     Right to Use<br>     Your right to use the Service is subject to any limitations, conditions and restrictions established by us
+     from time to time, in our sole discretion. We may alter, suspend or discontinue any aspect of the Service
+     at any time, including the availability of any Service feature, database or content. We may also impose 
+     limits on certain features and aspects of the Service or restrict your access to parts or all of the Service
+     without notice or liability. <br>   
+     Adult<br>     You represent, warrant and covenant that you are at least 18 years old.<br>     
+     Code of Conduct<br>     You agree to use the Service in accordance with the following Code of Conduct:<br>     a. you will keep all information provided to you through the Service as private and confidential and will 
+         not give such information to anyone without the permission of the person who provided it to you;	<br>     b. you will not use the Service to engage in any form of harassment or offensive behavior, incluiGn    
+         but not limited to the posting of communications, pictures, videos or audio recordings which contain
+         libelous, slanderous, abusive or defamatory statements, or racist, pornographic, obscene, or offensive
+         language or images;	<br>     c. you will not forward chain letters through the Service; 	<br>     d. you will not use the Service to infringe the privacy rights, property rights, or any other rights of any
+         persons;</span></strong><strong><span class="style58"><br>     e. you will not post messages, pictures or recordings or use the Service in any way which violates,</span></strong><span class="style59">    
+         plagiarizes or infringes upon the rights of any third party, including but not limited to any copyright 
+        or trade-mark law, privacy or other personal or proprietary rights, or is fraudulent or otherwise
+        unlawful or violates any law; and 
+     f. you will not use the Service to distribute, promote or otherwise publish any material containing
+        any solicitation for funds, advertising or solicitation for goods or services. g. you will not use the 
+        Service to distribute or up load any virus, trojan horses or do anything else that might cause harm
+        to the Service, NiceorSpice systems or to other members' systems in any way. h. you will not post or 
+        transmit in any manner any contact information including, but not limited to, email addresses, 
+       &quot;instant messenger&quot; nicknames, telephone numbers, postal addresses, URLs, or full names through
+        your publicly posted information.
+
+        Membership Categories
+               
+        Users of the Service may become &quot;Guests&quot;, &quot;Free Members&quot; or &quot;Full Members&quot; of the Service.
+        Guests are allowed access to a minimal level of the Service's features and are not charged by us
+        for the use of the features they can access. Free Members are allowed to access more features of
+        the Service than are Guests, but are not allowed access to all of the features that Full Members
+        are allowed to access. Free Members are not charged by us for the features they can access. Full
+        Members are provided with access to additional features of the Service that are not available to
+        Guests or Free Members. Full Members are not charged by us for the features that are free to
+        Free Members. Certain additional features of the Service made available to Full Members are
+        also free of charge. Certain other features of the Service are &quot;paid features&quot;, for which a Full
+        Member is charged.
+       
+        Fees and Payments
+            
+        a. Full Members of the Service are required to purchase &quot;Credits&quot; in order to use the &quot;paid 
+            features&quot; of the Service. Each Full Member is credited with the number of Credits purchased.
+            Each of the &quot;paid features&quot; of the Service costs one or more Credits to use. Each time a Full
+            Member uses a &quot;paid feature&quot; of the Service, his account of Credits is debited by the number
+            of Credits charged to use that &quot;paid feature&quot;. 
+        b. In order to purchase Credits, Full Members may charge them online to a credit card account,
+             place an order via a 1-900 telephone number, pay cash or by credit card in accordance with
+             our pricing policy for Credits as posted on the Service from time to time. In addition to 
+             paying the published price for Credits, the purchaser is responsible for paying all applicable
+             taxes in connection with the purchase of the Credits. We reserve the right to change our 
+             pricing policy at any time at our sole discretion. We also reserve the right to change the 
+             method or manner in which we charge members for Credits, or the method of payment 
+             which is acceptable to us, at our sole discretion. 
+         c. Once we have confirmed receipt of your payment, we will credit your account with the
+             number of Credits purchased. Where we receive payment for an incorrect amount or 
+             non-US$ we will credit your account with a pro-rated number of credits based on the funds
+             received, converted to US$ at a reasonable market exchange rate at the time of processing.
+             Credits will be automatically deducted from your account as you use &quot;paid features&quot; of the
+             Service. You can confirm the number of Credits which remain available to you in your 
+             account at any time by checking your account online. A Full Member whose account of 
+             Credits is reduced to zero remains a Full Member, but can not access &quot;paid features&quot; until
+              additional Credits are purchased. If your usage of the Service is terminated because of a 
+              breach of this Agreement or if it is terminated for any reason, any unused Credits are 
+              automatically and immediately forfeited. 
+          d. THE PURCHASE OF CREDITS IS NON-REFUNDABLE. Any unused Credits will remain
+              credited to your account but will not be refunded if unused, even if you are no longer 
+              using the Service. Credits will only be credited to the account of the Full Member 
+              purchasing the Credits, and to no one else. Credits may not be transferred from one
+              member of the Service to another member. The cost of Credits purchased by a Full 
+              Member is not refundable under any circumstance but can be used by you at any time. 
+          e. You agree to pay or have paid all fees and charges incurred in connection with your 
+              membership  with the Service (including any applicable taxes) at the rates in effect 
+              when the charges were incurred. All fees and charges are nonrefundable. We may 
+              change the fees and charges in effect for using the Service, or add new fees or charges,
+              by posting new fees and changes on the site from time to time. You also are responsible
+              for any fees or charges incurred to access the Service through an Internet access provider
+              or other third party service, including but not limited to telephone charges. YOU, AND 
+              NOT WE, ARE RESPONSIBLE FOR PAYING ANY AMOUNTS BILLED TO YOUR CREDIT
+              CARD BY A THIRD PARTY, WHICH WERE NOT AUTHORIZED BY YOU. 
+      
+     Privacy and Use of Information
+   
+     By issuing the services you have also agreed to our Privacy Statement. You acknowledge that 
+     (a) we cannot ensure the security or privacy of information you provide through the Internet and
+     your email messages, and you release us from any and all liability in connection with the use of
+     such information by other parties; (b) we are not responsible for, and cannot control, the use by
+     others of any information which you provide to them and you should use caution in selecting the
+     personal information you provide to others through the Service; and (c) we cannot assume any
+     responsibility for the content of messages sent by other users of the Service, and you release us
+     from any and all liability in connection with the contents of any communications you may receive
+     from other users. We cannot guarantee, and assume no responsibility for verifying, the accuracy
+     of the information provided by other users of the Service.
+   
+     You may not use the Service for any unlawful purpose. We may refuse to grant you an ID or 
+     nickname that impersonates someone else, is protected by trade-mark or proprietary law, or is 
+     vulgar or otherwise offensive, as determined by us in our sole discretion.
+
+     Monitoring of Information
+ 
+     We reserve the right to monitor all advertisements, public postings, messages, video and audio
+     recordings to ensure that they conform to the content guidelines which may be applicable from
+     time to time.
+
+     Removal of Information
+ 
+     While we do not and cannot review every message or other material posted or sent by users of
+     the Service, and are not responsible for any content of these messages or materials, we reserve
+     the right, but are not obligated, to delete, move, or edit messages or materials, including without
+     limitation profiles, public postings, messages, video and audio recordings that we, in our sole
+     discretion, deem to violate the Code of Conduct set out above or any applicable content guidelines,
+     or to be otherwise unacceptable. You shall remain solely responsible for the content of profiles, 
+     public postings, messages, video and audio recordings and other materials you may upload to the
+     Service or users of the Service.
+   
+     Termination of Access to Service
+   
+     We may, in our sole discretion, terminate or suspend your access to all or part of the Service at
+     any time, with or without notice, for any reason, including, without limitation, breach of this
+     Agreement. Without limiting the generality of the foregoing, any fraudulent, abusive, or 
+     otherwise illegal activity, or that may otherwise affect the enjoyment of the Service or the 
+     Internet by others may be grounds for termination of your access to all or part of the Service
+     at our sole discretion, and you may be referred to appropriate law enforcement agencies.
+   
+     Proprietary Information
+
+     The Service contains information which is proprietary to us our partners, and our users. We
+     assert full copyright protection in the Service. Information posted by us, our partners or users
+     of the Service may be protected whether or not it is identified as proprietary to us or to them. 
+     You agree not to modify, copy or distribute any such information in any manner whatsoever 
+     without having first received the express permission of the owner of such information. For 
+     additional information, please refer to our Legal Section.
+   
+      No Responsibility
+
+      You acknowledge that we are not responsible for suspension of the Service, regardless of the
+      cause of the interruption or suspension. Any claim against us shall be limited to the amount
+      you paid, if any, for use of the Service during the previous 12 months. We may discontinue
+      or change the Service or its availability to you at any time, and you may stop using the Service
+      at any time.
+
+     Security
+   
+     Your account is private and should not be used by anyone else. You are responsible for all usage
+      or activity on the Service by users using your password, including but not limited to use of your 
+      password by any third party.
+   
+     External Links
+   
+     The Service may from time to time contain links to other Internet sites and resources 
+     (&quot;External Links&quot;). You acknowledge that we are not responsible for, and have no liability as a 
+     result of, the availability of External Links or their contents. We suggest that you review the
+     terms of use and privacy statement of such External Links prior to use of them.
+
+     Indemnity
+   
+     You agree to indemnify us, our officers, directors, employees and agents, from any loss or 
+     damages, including without limitation reasonable legal fees, which we may suffer from your
+     activities on or use of the Service, including without limitation any breach by you of this 
+     Agreement or any charges or complaints made by other parties against you. You shall cooperate
+     as fully as reasonably required in the defense of any claim. We reserve the right to assume the
+     exclusive defense and control of any matter otherwise subject to indemnification by you; 
+     provided, however, that you shall remain liable for any such claim.
+
+     No Warranties
+   
+     The Service is distributed on an &quot;as is&quot; basis. We do not warrant that this Service will be 
+     uninterrupted or error-free. There may be delays, omissions, and interruptions in the 
+     availability of the Service. Where permitted by law, you acknowledge that the Service is 
+     provided without any warranties of any kind whatsoever, either express or implied, including
+     but not limited to the implied warranties of merchantability and fitness for a particular 
+     purpose. You acknowledge that use of the Service is at your own risk. We do not represent
+     or endorse the accuracy or reliability of any member profile, advice, opinion, statement or
+     other information displayed, uploaded or distributed through the Service by NiceorSpice, our 
+     partners or any user of the Service or any other person or entity. You acknowledge that 
+     any reliance upon any such opinion, member profile, advice, statement or information shall
+     be at your sole risk.
+   
+     We do not represent or endorse the accuracy or reliability of any advice, opinion, statement
+     or other information displayed, uploaded or distributed through the Service by NiceorSpice 
+     any user of the Service or any other service. Your continued use of the Service now, or 
+     following the posting of notice of any changes in this Agreement, will constitute a binding 
+     acceptance by you of this Agreement, or any subsequent modifications.
+
+     Advice Columnists
+   
+     The Service may from time to time include messages from advice columnists who respond 
+     to &quot;relationship&quot; questions. Any statements made by advice columnists are provided for 
+     entertainment purposes only, and are not intended, and should not be taken, as specific 
+     advice in any particular circumstance. Such statements do not constitute counseling of any
+     kind. Users with personal problems or who may be seeking personal advice applicable to 
+    their personal situation, are urged to consult with a qualified counselor with respect to such
+     issues.
+   
+     Modifications
+   
+     We may modify this Agreement from time to time. Notification of changes in this 
+     Agreement will be posted on the Service or sent via electronic mail, as we may determine
+     in our sole discretion. If you do not agree to any modifications, you should terminate your
+     use of the Service. Your continued use of the Service now, or following the posting of notice
+     of any changes in this Agreement, will constitute a binding acceptance by you of this 
+     Agreement, or any subsequent modifications.
+
+     Disclosure and Other Communication
+   
+     We reserve the right to send electronic mail to you, for the purpose of informing you of 
+     changes or additions to the Service, or of any NiceorSpice related products and services. We
+     reserve the right to disclose information about your usage of the Service and demographics
+     in forms that do not reveal your personal identity.
+
+     And by your use of the Service, you consent to such disclosures and communications 
+     subject to the terms of our Privacy Statement.
+ 
+     Governing Law
+   
+     This Agreement is entered into in Ontario, Canada. You agree that it will be governed by
+     the laws of the Province of Ontario and any disputes arising out of this Agreement will be
+     subject to the courts of the Province of Ontario and the federal courts applicable within the
+     Province. If any provision in this Agreement is invalid or unenforceable under applicable
+     law, the remaining provisions will continue in full force and effect. This Agreement will 
+     not be governed by the United Nations Convention on Contracts for the International 
+     Sale of Goods. Les parties acceptent d'un commun accord que la presente entente soit 
+     redigee en anglais.
+   
+     THE PARTIES SPECIFICALLY AGREE THAT THE PERFORMANCE OF THIS AGREEMENT,
+     IN ALL ITS ASPECTS, DOES NOT TAKE PLACE OUTSIDE THE JURISDICTION OF THE
+     PROVINCE OF ONTARIO, CANADA
+   
+     Assignment
+   
+     You do not have the right to assign this Agreement or any of your rights to the Service to
+     anyone. NiceorSpice has the right to assign any or all of its rights and duties under this 
+     Agreement or to the Service to any third party. At the election of APC, Inc., if APC's
+     obligations hereunder are assumed by a third party, NiceorSpice shall be relieved of any and
+     all liability under this Agreement.
+             </span></pre>
+          </div>
+    </div>
+        <p>.<span class="style54">.</span></p>
+        <p><span class="style54">............</span><span class="style53">TERMS OF USE AGREEMENT </span></p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>
+</body>
+
+</html>

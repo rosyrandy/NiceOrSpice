@@ -1,0 +1,231 @@
+<html>
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="generator" content="Adobe GoLive 4">
+	<title>Welcome to Nice or Spice</title>
+	<csscriptdict>
+	<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+	</csscriptdict><csactiondict>
+	<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button7',/*URL*/'../images/servblu1.gif',/*URL*/'../images/servblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button8',/*URL*/'../images/equipblu1.gif',/*URL*/'../images/equipblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button9',/*URL*/'../images/aboutblu1.gif',/*URL*/'../images/aboutblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button10',/*URL*/'../images/contblu1.gif',/*URL*/'../images/contblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button11',/*URL*/'../images/homeblu1.gif',/*URL*/'../images/homeblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button6',/*URL*/'../images/home.gif',/*URL*/'../images/home2.gif',/*URL*/'','');
+
+// --></script>
+	</csactiondict>
+	<style type="text/css">
+	<!--
+body,td,th {
+	color: #FFFFFF;
+}
+-->
+	</style>
+	<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+    </script>
+	<style type="text/css">
+<!--
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #A8A8B0;
+	background-image: url(../images/bg_grad2.jpg);
+}
+.style10 {font-size: xx-small}
+.style17 {color: #FFFFFF}
+.style43 {color: #FFCCFF; font-size: xx-small; font-family: Arial, Helvetica, sans-serif; }
+.style44 {color: #990000}
+.style49 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFCCFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.style51 {
+	font-size: 24px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style52 {color: #FFFFCC}
+.style54 {color: #000000}
+.style55 {font-size: 12px}
+.style58 {font-family: Arial, Helvetica, sans-serif}
+.style59 {font-size: 14px}
+.style61 {font-family: Arial, Helvetica, sans-serif; font-weight: bold; }
+.style63 {font-family: Arial, Helvetica, sans-serif; font-size: 12px; }
+.style64 {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style66 {font-size: 9px}
+.style68 {font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+.style69 {color: #CCCCCC}
+.style70 {color: #333333}
+.style72 {font-size: x-large}
+-->
+    </style></head>
+
+	<body onload="CSScriptInit();">
+	<div align="left">    </div>
+		<center>
+			<p>
+			</p>
+        </center>
+		<p>
+		
+		</p>
+		<p>&nbsp;</p>
+        <p><span class="style51"><span class="style17">.</span></span></p>
+        <div id="Layer3" style="position:absolute; width:484px; height:55px; z-index:3; left: 37px; top: 135px;">
+          <pre class="style51">Phone Page</pre>
+    </div>
+        <p><span class="style51"><span class="style52"> </span></span></p>
+        <div id="Layer1" style="position:absolute; width:909px; height:102px; z-index:1; left: 2px; top: 6px; background-image: url(../images/genericheader4.jpg); layer-background-image: url(../images/genericheader4.jpg); border: 1px none #000000;">
+          <p><span class="style10"><span class="style72">.</span></span></p>
+          <p><span class="style10">.</span></p>
+          <p><span class="style10">.</span><span class="style17"><span class="style70">. . . .. . . . . . . . . . . . . . . .. . . .. . . . . . .. . .. . . . . .. . . . . . . .. .. . . </span><span class="style44">. . . . .</span></span><span class="style17"><span class="style44"> . . . . .</span> </span><span class="style2"><span class="style49">|</span> <a href="contact.html" class="style43"> Contact Us</a> <span class="style49">|</span> <a href="join.html" class="style43"> Subscribe</a> <span class="style49">|</span> <a href="loginpass.html" class="style43">Log In</a> <span class="style49">|</span> <a href="../index.html" class="style43">HOME</a> <span class="style49">|</span></span></p>
+    </div>
+        <div id="Layer5" style="position:absolute; width:648px; height:165px; z-index:5; left: 37px; top: 208px;" class="style59">
+          <table width="639" height="102" border="1" cellpadding="15" bordercolor="#000000" bgcolor="#99CCCC" class="style59">
+            <tr>
+              <td bordercolor="#000000" bgcolor="#99CCCC">For nearly 10 years, The APC, Inc. Corporation has provided its clients with new and ingenious ways for people to meet. We're proud to offer a faster, easier, and more economical way to enjoy meeting people your sure to be intersted in - Nice or Spice.
+              <p>For just $9.95/month you'll have full access to the website. Subscribe today and get all the features of this website today!</p></td>
+            </tr>
+          </table>
+          <p>&nbsp;</p>
+    </div>
+        <p><span class="style51"><span class="style52"> </span></span></p>
+        <p class="style69">.
+    <p>.    
+    <p>.     
+    <p>    
+    <div id="Layer4" style="position:absolute; width:634px; height:27px; z-index:4; left: 40px; top: 518px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000;">
+      <div align="center"><span class="style54"><a href="contact.shtml" title="Support" class="style55">Contact Us</a> | <a href="terms.html" title="Terms and Conditions" class="style55">Terms and Conditions</a> | <a href="privacy.html" title="Privacy Policy" class="style55">Privacy Policy</a> | <a href="stories.html" title="Success Stories" class="style55">Success Stories</a> | <a href="phone.html" title="Nice Or Spice by Phone" class="style55">Nice Or Spice by Phone</a> | <a href="legal.html" title="Legal Statement" class="style55">Legal Statement</a> | <a href="email.html" title="Free Emails" class="style55">Free Emails</a></span></div>
+    </div>
+    <p>       
+    <p>.     
+    <p>.
+    <p>.
+    <p>.                        
+    <p>
+    <p>
+    <p>
+    <p>
+    <p>
+    <p>
+    <p>                                                                                                                                                                                                
+    <p>        
+    <center>
+          <p class="style54">&nbsp;</p>
+    </center>
+    <div align="left">    </div>
+        <p>
+    </body>
+
+</html>

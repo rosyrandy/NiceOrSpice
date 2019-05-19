@@ -1,0 +1,342 @@
+<html>
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="generator" content="Adobe GoLive 4">
+	<title>Welcome to Nice or Spice</title>
+	<meta name="keywords" content="match, love, sex, dating">
+	<csactions><csaction name="4631B69" class="Goto Link" type="ONEVENT" val0="Pages/Contact.html" val1></csactions><csscriptdict>
+	<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+function CSGotoLink(action) {
+	if (action[2].length) {
+		var hasFrame=false;
+		for(i=0;i<parent.frames.length;i++) { if (parent.frames[i].name==action[2]) { hasFrame=true; break;}}
+		if (hasFrame==true)
+			parent.frames[action[2]].location = action[1];
+		else
+			window.open (action[1],action[2],"");
+	}
+	else location = action[1];
+}
+
+// --></script>
+	</csscriptdict><csactiondict>
+	<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button',/*URL*/'Media/service.GIF',/*URL*/'Media/service2.GIF',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button2',/*URL*/'Media/equip.GIF',/*URL*/'Media/equip2.GIF',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button3',/*URL*/'Media/quality.GIF',/*URL*/'Media/quality2.GIF',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button4',/*URL*/'Media/about.GIF',/*URL*/'Media/about2.GIF',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button5',/*URL*/'Media/contact.GIF',/*URL*/'Media/contact2.GIF',/*URL*/'','');
+CSAct[/*CMP*/ '4631B69'] = new Array(CSGotoLink,/*URL*/ 'Pages/Contact.html','');
+
+// --></script>
+	</csactiondict>
+	<style type="text/css">
+	<!--
+#layer { position: absolute; top: 659px; left: 33px; width: 807px; height: 70px; visibility: visible }body {
+	background-image: url();
+	background-color: #CC0000;
+}
+body,td,th {
+	color: #000000;
+}
+.style4 {color: #FFFFCC; font-family: DiskusDMed; font-size: xx-large;}
+.style5 {color: #FFFFFF}
+.style8 {color: #993300}
+-->
+	</style>
+	<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+    </script>
+
+<script language="JavaScript"><!--
+	var popUpWin=0;
+function popUpWindow(URLStr, left, top, width, height)
+{
+  if(popUpWin)
+  {
+    if(!popUpWin.closed) popUpWin.close();
+  }
+  popUpWin = open(URLStr, 'popUpWin', 'toolbar=no,location=no,directories=no,status=no,menub ar=no,scrollbar=no,resizable=no,copyhistory=yes,width='+width+',height='+height+',left='+left+', top='+top+',screenX='+left+',screenY='+top+'');
+}
+// -->
+</script>
+
+	
+<script language="JavaScript"><!--
+function password() 
+{
+  var userid = document.form1.user.value;
+  var passwd = document.form1.pass.value;
+
+  if (userid == "evan" & passwd == "mustang") 
+     {
+      window.navigate("Pages/personal.html");
+      return " "; 
+     }
+   window.navigate("Pages/loginpass.html");
+   return " ";
+}
+// -->
+</script>
+
+
+
+<style type="text/css">
+<!--
+body {
+	background-color: #CC3300;
+}
+.style8 {color: #FFFFFF}
+.style10 {color: #FFCCFF; font-size: 12px; }
+.style26 {font-size: 12px}
+.style27 {font-size: large}
+.style29 {font-size: x-small}
+.style30 {font-size: 9px}
+.style32 {font-family: TimeScrDBol, TimeScrDMed, TimeScrDLig; font-size: 9px; color: #666666; font-weight: bold; }
+.style35 {font-size: 24px}
+.style38 {
+	color: #000000;
+	font-weight: bold;
+}
+.style40 {font-size: 12px; font-weight: bold; }
+.style41 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #000099;
+	font-weight: bold;
+}
+.style42 {color: #FFFFCC}
+.style43 {color: #0000CC}
+.style45 {
+	color: #0000FF;
+	font-family: "Times New Roman", Times, serif;
+	font-size: 12px;
+}
+.style46 {font-size: medium}
+.style47 {color: #999999}
+.style48 {color: #FFCCFF}
+.style49 {font-family: Arial, Helvetica, sans-serif}
+.style50 {color: #FFFFCC; font-size: 12px; }
+.style53 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #3300FF;
+	font-weight: bold;
+}
+.style54 {font-size: 9pt}
+-->
+</style>
+	</head>
+
+	<body link="blue" alink="red" vlink="#ff00ff" onload="CSScriptInit();">
+	
+	<p class="style4 style5"><img src="images/graphic12.jpg" width="740" height="140"></p>
+	<div id="Layer9" style="position:absolute; width:489px; height:345px; z-index:4; left: 319px; top: 154px; background-image: url(images/friends3.jpg); layer-background-image: url(images/friends3.jpg); border: 1px none #000000;"></div>
+	<div id="Layer3" style="position:absolute; width:240px; height:139px; z-index:3; left: 750px; top: 15px; background-color: #993300; layer-background-color: #993300; border: 1px none #000000;"></div>	
+    <p class="style4 style5">&nbsp;</p>
+	<p align="center" class="style4 style5"><span class="style8">    </span></p>
+	<p class="style4 style5">&nbsp;	</p>
+	  <p class="style4 style5">      <span class="style8">      </span>
+      </p>
+    <div id="Layer1" style="position:absolute; width:291px; height:221px; z-index:1; left: 18px; top: 161px; background-color: #FF9999; layer-background-color: #FF9999; border: 1px none #000000; background-image: url(images/queryback.jpg); layer-background-image: url(images/queryback.jpg);"><span class="style4 style5">            <span class="style8">
+</span></span>
+	        <p class="style4 style27">
+      <center class="style29">
+	            <p class="style30"><span class="style32"><span class="style35">.</span>.</span></p>
+	            <p class="style30">&nbsp;</p>
+      </center>
+	        </p>
+	        <div id="Layer4" style="position:absolute; width:294px; height:33px; z-index:4; left: 2px; top: 238px;">
+	          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="138" height="41">
+                <param name="movie" value="button8.swf">
+                <param name="quality" value="high">
+                <param name="BGCOLOR" value="#CC0000">
+                <embed src="button8.swf" width="138" height="41" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" bgcolor="#CC0000" ></embed>
+              </object>
+	          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=5,0,0,0" width="138" height="41">
+                <param name="movie" value="button10.swf">
+                <param name="quality" value="high">
+                <param name="BGCOLOR" value="#CC0000">
+                <embed src="button10.swf" width="138" height="41" quality="high" pluginspage="http://www.macromedia.com/shockwave/download/index.cgi?P1_Prod_Version=ShockwaveFlash" type="application/x-shockwave-flash" bgcolor="#CC0000" ></embed>
+              </object>
+      </div>
+	        <p class="style26">. . <span class="style47">. .. .<span class="style26"> .</span></span></span>	          <span class="style38">I Am</span></span>      </span>
+              <select name="select" size="1">
+        <option value="0">Male</option>
+        <option value="1">Female</option>
+        <option value="3">Couple</option>
+      </select> 
+              <strong>For</strong>              
+              <select name="select4" size="1">
+        <option value="1">Female</option>
+        <option value="0">Male</option>
+        <option value="2">Couple</option>
+      </select>
+</p>
+	        <p class="style26">. .. . . . <span class="style47">.<strong> . . .</strong></span><strong> </strong><span class="style26"><span class="style40">Zip Code</span></span>      </span>
+              <input name="textfield32" type="text" size="13" maxlength="13">
+      </p>
+	        <p class="style26"> . . . . . .<strong>Range</strong></span>            
+	          <input name="textfield" type="text" value="25" size="3" maxlength="2"> 
+                .<strong>To</strong>.</span>                
+                <input name="textfield2" type="text" value="34" size="3" maxlength="2">
+                .  <strong>Miles</strong> </span>
+                <select name="select3">
+                <option>5</option>
+                <option>10</option>
+                <option>20</option>
+                <option>50</option>
+                <option>ALL</option>
+              </select>
+      </p>
+    </div>
+<span class="style4 style5">	      </span>
+    </form>
+    <div id="Layer5" style="position:absolute; width:286px; height:128px; z-index:4; left: 16px; top: 445px; background-color: #FFFFCC; layer-background-color: #FFFFCC; border: 1px none #000000; background-image: url(images/memberback.jpg); layer-background-image: url(images/MemberBack.jpg);" class="style30">
+      <p align="center" class="style8 style41">&nbsp;</p>
+      <form name="form1" method="post" action="">
+        <pre class="style49"><span class="style54">        MEMBER ID</span>    <input type="text" name="user">
+<span class="style54">        PASSWORD  </span> <input type="text" name="pass">       
+        <span class="style45"><a href="Pages/contact.shtml">Forget Password?</a></span><span class="style42">.              </span>       <input name="Button" type="button" class="style53" value="   Log In   " onclick="password()">
+      </pre>
+      </form>
+    </div>    
+    <p class="style4 style5">&nbsp;    </p>
+	<p class="style4 style5">&nbsp;</p>
+	<p>&nbsp;</p>
+	<div id="Layer12" style="position:absolute; width:315px; height:28px; z-index:13; left: 431px; top: 129px;"><a href="Pages/contact.html" title="Support" class="style10">Contact Us</a> <span class="style48">|</span>  <a href="Pages/stories.html" title="Success Stories" class="style10">Success Stories</a> <span class="style48">|</span> <a href="Pages/phone.html" title="Nice Or Spice by Phone" class="style10">Nice Or Spice by Phone</a> <span class="style48">|</span>  <a href="Pages/loginpass.html" title="Free Emails" class="style10">Log In</a></div>
+	<div id="Layer10" style="position:absolute; width:973px; height:13px; z-index:10; left: 13px; top: 572px; background-color: #CC3300; layer-background-color: #CC3300; border: 1px none #000000;">
+	  <pre>&nbsp;</pre>
+	</div>
+	<p>&nbsp;</p>
+	<div id="Layer11" style="position:absolute; width:651px; height:35px; z-index:12; left: 67px; top: 619px;"><a href="Pages/contact.html" title="Support" class="style10">Contact Us</a> <span class="style48">|</span> <a href="Pages/terms.html" title="Terms and Conditions" class="style10">Terms and Conditions</a> <span class="style48">|</span> <a href="Pages/privacy.html" title="Privacy Policy" class="style10">Privacy Policy</a> <span class="style48">|</span> <a href="Pages/stories.html" title="Success Stories" class="style10">Success Stories</a> <span class="style48">|</span> <a href="Pages/phone.html" title="Nice Or Spice by Phone" class="style10">Nice Or Spice by Phone</a> <span class="style48">|</span> <a href="Pages/legal.html" title="Legal Statement" class="style10">Legal Statement</a> <span class="style48">|</span> <a href="Pages/email.html" title="Free Emails" class="style10">Free Emails</a></div>
+	<div id="Layer7" style="position:absolute; width:788px; height:35px; z-index:11; left: 14px; top: 579px; font-size: 10px; font-family: &quot;Times New Roman&quot;, Times, serif; color: #FFFFFF;">
+	  <div align="center">This is an adult service. By selecting any of the options you acknowledge and confirm that you are 18 years of age or older.  In addition to our content, our services may include the content of third parties. Unless otherwise indicated, such content is reproduced on our service with the permission of the copyright holder. For additional conditions for use of the this site, please refer to our Terms of Use and Privacy Statement. All content on this website and its related services is protected by copyright. &copy; NiceOrSpice, 2003. All rights reserved. <br>
+      </div>
+	</div>
+	<p>&nbsp;</p>
+	<div id="Layer6" style="position:absolute; width:21px; height:82px; z-index:5; left: 302px; top: 490px; background-color: #FFFFCC; layer-background-color: #FFFFCC; border: 1px none #000000; background-image: url(images/memberback2.jpg); layer-background-image: url(images/MemberBack2.jpg);">
+	  <div align="center">
+	    <p class="style26 style43">&nbsp;</p>
+	    <p class="style26 style43">&nbsp;</p>
+	  </div>
+	</div>
+	<div id="Layer2" style="position:absolute; width:469px; height:43px; z-index:6; left: 299px; top: 519px; background-color: #FFFFCC; layer-background-color: #FFFFCC; border: 1px none #000000;">
+	  <div align="center">
+	    <pre class="style53">Nice or Spice lets you define your pleasure !   Whether you're looking for friendship,
+dating or taking a walk on the wild side, Nice or Spice let's you make the choice.
+Join today and start making connections with some amazing people.</pre>
+      </div>
+	</div>
+	<div id="Layer8" style="position:absolute; width:659px; height:57px; z-index:5; left: 322px; top: 515px; background-color: #FFFFCC; layer-background-color: #FFFFCC; border: 1px none #000000;"></div>
+	<p class="style4 style5 style46">&nbsp;</p>
+	<center>
+	  <p>&nbsp;</p>
+    </center>
+		<div align="left"><div align="center"></div>
+    </div>
+</body>
+
+</html>
+
+

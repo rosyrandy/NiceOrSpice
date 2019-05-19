@@ -1,0 +1,234 @@
+<html>
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="generator" content="Adobe GoLive 4">
+	<title>Welcome to Nice or Spice</title>
+	<csactions><csaction name="F031927" class="Goto Link" type="ONEVENT" val0="../index.html" val1></csactions><csscriptdict>
+	<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+function CSGotoLink(action) {
+	if (action[2].length) {
+		var hasFrame=false;
+		for(i=0;i<parent.frames.length;i++) { if (parent.frames[i].name==action[2]) { hasFrame=true; break;}}
+		if (hasFrame==true)
+			parent.frames[action[2]].location = action[1];
+		else
+			window.open (action[1],action[2],"");
+	}
+	else location = action[1];
+}
+
+// --></script>
+	</csactiondict>
+	<style type="text/css">
+	<!--
+body {
+	background-image: url(../images/metl012.jpg);
+}
+-->
+	</style>
+	<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+    </script>
+	<style type="text/css">
+<!--
+.style1 {
+	font-size: 24px;
+	font-weight: bold;
+}
+body {
+	background-image: url(../images/metl010.jpg);
+}
+.style8 {
+	font-size: 24px;
+	font-family: "Times New Roman", Times, serif;
+}
+.style9 {
+	font-family: "Times New Roman", Times, serif;
+	font-size: 16px;
+	font-weight: bold;
+}
+.style10 {
+	font-family: "Times New Roman", Times, serif;
+	font-weight: bold;
+	font-size: 24px;
+}
+.style11 {font-size: 16px; font-family: "Times New Roman", Times, serif;}
+-->
+    </style>
+	</head>
+
+	<body onload="CSScriptInit();">
+		<center>
+			<div id="Layer1" style="position:absolute; width:716px; height:122px; z-index:1; left: 20px; top: 19px; background-color: #000000; layer-background-color: #000000; border: 1px none #000000;">		      
+			  <div align="left">. . . . .. . . . . . . . . . . . . . . .. . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .   l l l l l l l l l l l l l l l l l l l . <img src="../images/globe3.gif" width="52" height="48"> .. . . . . . .<img src="../images/nicespiceemb3.jpg" width="504" height="69"> </div>
+		  </div>
+			<p><csobj w="131" h="42" t="Button" ht="../images/service2.gif"></csobj><csobj w="151" h="42" t="Button" ht="../images/about2.gif"></csobj></p>
+			<p><csobj w="151" h="42" t="Button" ht="../images/about2.gif"></csobj></p>
+			<p><csobj w="151" h="42" t="Button" ht="../images/about2.gif"></csobj></p>
+			<p align="left"><csobj w="151" h="42" t="Button" ht="../images/about2.gif"></csobj><csobj w="151" h="42" t="Button" ht="../images/about2.gif"></csobj><a href="../index.html" csclick="F031927" onclick="CSAction(new Array(/*CMP*/'F031927'));return CSClickReturn();"><csobj w="102" h="42" t="Button" ht="../images/home2.gif">
+            </a></p>
+			<p align="left">&nbsp;</p>
+			<p align="left">&nbsp;</p>
+			<p align="left">&nbsp;</p>
+			<p align="left">&nbsp;</p>
+			<p align="left"><a href="../index.html" csclick="F031927" onclick="CSAction(new Array(/*CMP*/'F031927'));return CSClickReturn();">
+            </a></p>
+	</center>
+		<p>
+		
+		</p>
+        </p>
+        <p>&nbsp;</p>
+        <div id="Layer2" style="position:absolute; width:812px; height:115px; z-index:2; left: 13px; top: 254px;">
+          <pre><span class="style9">Contact us at:    </span><span class="style10">Automated People Connection</span>
+           <span class="style9">     P. O. Box<br>                           Escondido, Calif. 92672 USA <br>                           Email: support@niceorspice.com</span><br>
+          </pre>
+        </div>
+        <div id="Layer4" style="position:absolute; width:826px; height:60px; z-index:4; left: 6px; top: 159px;"><a href="../index.html" csclick="F031927" onclick="CSAction(new Array(/*CMP*/'F031927'));return CSClickReturn();">
+          <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="800" height="40">
+            <param name="movie" value="../images/buttons_index.swf">
+            <param name="quality" value="high">
+            <embed src="../images/buttons_index.swf" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="800" height="40"></embed>
+          </object>
+        </a></div>
+        <div id="Layer5" style="position:absolute; width:837px; height:26px; z-index:5; left: 9px; top: 217px;">
+          <hr size="5">
+        </div>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <p>&nbsp;</p>
+        <div id="Layer6" style="position:absolute; width:331px; height:69px; z-index:6; left: 376px; top: 310px; font-size: 12px;">Copyright &copy; 1999Apc, Inc. All rights reserved. . Please contact APC, Inc. with comments or questions about this site. If you cannot find what you are looking for, please contact our headquarters at the address listed above, e-mail us, fill out form below.</div>
+        <p>&nbsp;</p>
+        <center class="style1">
+    </center>
+	<center>
+	  <INPUT TYPE="hidden" NAME="email" VALUE="rhoffman\@ix.netcom.com">
+      <INPUT TYPE="hidden" NAME="recipient" VALUE="Randy Hoffman">
+      <INPUT TYPE="hidden" NAME="subject" VALUE="Contact Message">
+    </center>
+		<FORM method="post" action="http://www.niceorspice.com/cgi-bin/contact.cgi">
+		  <PRE><strong>      Your Name <input NAME="submitter_name"   size=30>           <span class="style8">Contact Form</span>
+		  
+        Address <input NAME="org_street1"  size=40>
+                <input NAME="org_street2"  size=40></strong>
+           <strong>City <input NAME="org_city"  size=26> State <input NAME="org_state"  size=3> 
+            Zip <input NAME="org_postal"  size=12> 
+		        
+          Email <input NAME="submitter_email"  size=30>
+   Phone number <input NAME="submitter_phone"  size=20></strong></PRE>
+		  <pre> <B> Please send me more information on:</B>
+  	<INPUT TYPE="checkbox" NAME="checkbox1" VALUE="service"><strong>Forgot Password</strong> 	<INPUT TYPE="checkbox" NAME="checkbox2" VALUE="delivery"> <strong>Membership</strong>    <INPUT TYPE="checkbox" NAME="checkbox3" VALUE="equipment"> <strong>Phone Service</strong>   <INPUT TYPE="checkbox" NAME="checkbox4" VALUE="callme"> <strong>Call me</strong> 		</pre>  
+		  <pre><B>      Comments:</B> 		  
+ 	       <textarea NAME="comments" rows=3 cols=63> </textarea>  		
+</pre>
+		  <HR>
+
+		<INPUT TYPE="submit" VALUE="  Submit Form   ">
+		<INPUT TYPE="reset" VALUE=" Clear Form "> 
+		</FORM>
+		<!--#exec cgi="/cgi-bin/counter.cgi"-->
+</body>
+
+</html>

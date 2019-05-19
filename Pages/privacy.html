@@ -1,0 +1,466 @@
+<html>
+
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+	<meta name="generator" content="Adobe GoLive 4">
+	<title>Welcome to Nice or Spice</title>
+	<csscriptdict>
+	<script><!--
+CSStopExecution = false;
+CSInit = new Array;
+function CSScriptInit() {
+if(typeof(skipPage) != "undefined") { if(skipPage) return; }
+idxArray = new Array;
+for(var i=0;i<CSInit.length;i++)
+	idxArray[i] = i;
+CSAction2(CSInit, idxArray);
+}
+CSAg = window.navigator.userAgent; CSBVers = parseInt(CSAg.charAt(CSAg.indexOf("/")+1),10);
+function IsIE() { return CSAg.indexOf("MSIE") > 0;}
+function CSIEStyl(s) { return document.all.tags("div")[s].style; }
+function CSNSStyl(s) { return CSFindElement(s,0); }
+function CSFindElement(n,ly) { if (CSBVers < 4) return document[n];
+	var curDoc = ly ? ly.document : document; var elem = curDoc[n];
+	if (!elem) { for (var i=0;i<curDoc.layers.length;i++) {
+		elem = CSFindElement(n,curDoc.layers[i]); if (elem) return elem; }}
+	return elem;
+}
+function CSClickReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return true; // dont follow link
+	else return false; // dont follow link
+}
+function CSButtonReturn () {
+	var bAgent = window.navigator.userAgent; 
+	var bAppName = window.navigator.appName;
+	if ((bAppName.indexOf("Explorer") >= 0) && (bAgent.indexOf("Mozilla/3") >= 0) && (bAgent.indexOf("Mac") >= 0))
+		return false; // follow link
+	else return true; // follow link
+}
+CSIm = new Object();
+function CSIShow(n,i) {
+	if (document.images) {
+		if (CSIm[n]) {
+			var img = (!IsIE()) ? CSFindElement(n,0) : document[n];
+			if (img && typeof(CSIm[n][i].src) != "undefined") {img.src = CSIm[n][i].src;}
+			if(i != 0)
+				self.status = CSIm[n][3];
+			else
+				self.status = " ";
+			return true;
+		}
+	}
+	return false;
+}
+function CSILoad(action) {
+	im = action[1];
+	if (document.images) {
+		CSIm[im] = new Object();
+		for (var i=2;i<5;i++) {
+			if (action[i] != '') { CSIm[im][i-2] = new Image(); CSIm[im][i-2].src = action[i]; }
+			else CSIm[im][i-2] = 0;
+		}
+		CSIm[im][3] = action[5];
+	}
+}
+CSStopExecution = false;
+
+function CSAction(array) { 
+	return CSAction2(CSAct, array);
+}
+function CSAction2(fct, array) { 
+	var result;
+	for (var i=0;i<array.length;i++) {
+		if(CSStopExecution) return false; 
+		var actArray = fct[array[i]];
+		if(actArray == null) return false; 
+		var tempArray = new Array;
+		for(var j=1;j<actArray.length;j++) {
+			if((actArray[j] != null) && (typeof(actArray[j]) == "object") && (actArray[j].length == 2)) {
+				if(actArray[j][0] == "VAR") {
+					tempArray[j] = CSStateArray[actArray[j][1]];
+				}
+				else {
+					if(actArray[j][0] == "ACT") {
+						tempArray[j] = CSAction(new Array(new String(actArray[j][1])));
+					}
+				else
+					tempArray[j] = actArray[j];
+				}
+			}
+			else
+				tempArray[j] = actArray[j];
+		}			
+		result = actArray[0](tempArray);
+	}
+	return result;
+}
+CSAct = new Object;
+
+// --></script>
+	</csscriptdict><csactiondict>
+	<script><!--
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button7',/*URL*/'../images/servblu1.gif',/*URL*/'../images/servblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button8',/*URL*/'../images/equipblu1.gif',/*URL*/'../images/equipblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button9',/*URL*/'../images/aboutblu1.gif',/*URL*/'../images/aboutblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button10',/*URL*/'../images/contblu1.gif',/*URL*/'../images/contblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button11',/*URL*/'../images/homeblu1.gif',/*URL*/'../images/homeblu2.gif',/*URL*/'','');
+CSInit[CSInit.length] = new Array(CSILoad,/*CMP*/'Button6',/*URL*/'../images/home.gif',/*URL*/'../images/home2.gif',/*URL*/'','');
+
+// --></script>
+	</csactiondict>
+	<style type="text/css">
+	<!--
+body,td,th {
+	color: #FFFFFF;
+}
+-->
+	</style>
+	<script language="JavaScript" type="text/JavaScript">
+<!--
+function MM_reloadPage(init) {  //reloads the window if Nav4 resized
+  if (init==true) with (navigator) {if ((appName=="Netscape")&&(parseInt(appVersion)==4)) {
+    document.MM_pgW=innerWidth; document.MM_pgH=innerHeight; onresize=MM_reloadPage; }}
+  else if (innerWidth!=document.MM_pgW || innerHeight!=document.MM_pgH) location.reload();
+}
+MM_reloadPage(true);
+//-->
+    </script>
+	<style type="text/css">
+<!--
+body,td,th {
+	color: #000000;
+}
+body {
+	background-color: #FFFFCC;
+	background-image: url();
+}
+.style10 {font-size: xx-small}
+.style17 {color: #FFFFFF}
+.style43 {color: #FFCCFF; font-size: xx-small; font-family: Arial, Helvetica, sans-serif; }
+.style44 {color: #990000}
+.style49 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFCCFF;
+	font-size: 14px;
+	font-weight: bold;
+}
+.style50 {color: #333333}
+.style51 {
+	font-size: 24px;
+	font-family: "Times New Roman", Times, serif;
+}
+.style52 {
+	font-size: 16px;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.style53 {
+	font-size: 24px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+}
+.style55 {font-size: x-large}
+.style56 {color: #FFFFCC}
+-->
+    </style></head>
+<body onload="CSScriptInit();">
+		<div align="left">	
+		  <div id="Layer1" style="position:absolute; width:1184px; height:114px; z-index:1; left: 1px; top: 12px; background-image: url(../images/genericheader2.jpg); layer-background-image: url(../images/GenericHeader2.jpg); border: 1px none #000000;">
+		    <p><span class="style10">.</span></p>
+		    <p><span class="style10">.</span></p>
+		    <p><span class="style10">.</span></p>
+		    <p><span class="style17">. . . . .  .. . . . . . . . . . . . . . . .. . . .. . . . . . .. . .. . . . . .. . . . . . . .. .. . . <span class="style44">. . . . . . . . . .</span> </span><span class="style2"><span class="style49">|</span> <a href="contact.html" class="style43"> Contact Us</a> <span class="style49">|</span> <a href="join.html" class="style43"> Subscribe</a> <span class="style49">|</span> <a href="loginpass.html" class="style43">Log In</a> <span class="style49">|</span> <a href="../index.html" class="style43">HOME</a> <span class="style49">|</span></p>
+	      </div>
+		</div>
+		<center>
+			<p>
+			</p>
+        </center>
+		<p>
+		<hr size="5">
+		</p>
+		<p>&nbsp;</p>
+<div id="Layer2" style="position:absolute; width:748px; height:612px; z-index:2; left: 13px; top: 183px; background-color: #FFFFFF; layer-background-color: #FFFFFF; border: 1px none #000000;">
+          <div align="justify">
+            <pre class="style50 style51"><strong>
+
+      Privacy Statement for www.niceorspice.com</strong></pre>
+            <pre class="style50">    Nice or Spice.com has created this Privacy Statement (Policy) in order to demonstrate
+    our firm commitment to helping our users better understand what information we collect
+    about them and what may happen to that information. The following discloses our 
+    information gathering and dissemination practices for the Websites listed below. </pre>
+            <pre class="style50">    <span class="style52">Overview</span>
+     As part of the normal operation of our services we collect and, in some cases, may 
+     disclose information about you. This Privacy Policy describes the information we
+     collect about you and what may happen to that information. By accepting this Privacy
+     Policy and our Terms and Conditions, you expressly consent to our use and disclosure
+     of your personal information in the manner prescribed in this Privacy Policy. This
+     Privacy Policy is incorporated into and subject to the terms of the NiceorSpice.com
+     Terms and Conditions. </pre>
+            <pre class="style50">     1. A Special Note About Children
+          Children are not eligible to use our services, and we ask that minors (under
+          the age of 18) do not submit any personal information to us. If you are a 
+          minor, you can use this service only in conjunction with your parents or
+          guardians.<br>
+     2. Information We Collect
+          Our primary goal in collecting personal information is to provide you with a
+          smooth, efficient, and customized experience. This allows us to provide 
+          services and features that most likely meet your needs and to customize our
+          service to make your experience easier. You agree that in order to assist our
+          members to meet each other we may feature members' profiles in our editorials
+          and newsletters that we send out from time to time to our members. Your name,
+          address and telephone number are confidential and will not be posted in your
+          profile. Your profile is available for other members to view. Members' 
+          profiles include a description and photos, likes and dislikes, individual
+          essays and other information helpful in determining matches. Your viewable
+          profile does not include any identifying information about you, except the 
+          username you chose upon registering. We do not disclose your email address
+          nor do we sell it or make it available to any third party other than as 
+          outlined in more detail in this Privacy Policy.
+
+          Please note that your personally identifiable information will be stored 
+          and processed on our computers in the United States. The laws on holding
+          personal data in the United States may differ from the European laws but
+          as we explain below, APC,Inc. will hold and transmit your information in
+          a safe, confidential and secure environment.
+
+          We automatically track certain information based upon your behavior on our
+          Websites using cookies and other devices. We use this information for 
+          internal research on our members' demographics, interests, and behavior
+          to better understand and serve you and our community. This information may
+          include the URL that you just came from (whether this URL is on our site or
+          not). Which URL you next go to (whether this URL is on our site or not), 
+          what browser you are using, and your IP address.
+
+          We use data collection devices such as &quot;cookies&quot; on certain pages of our 
+          Websites. &quot;Cookies&quot; are small files placed on your hard drive that assist
+          us in providing customized services. We also offer certain features that 
+          are only available through the use of a &quot;cookie&quot;. Cookies can also help 
+          us provide information which is targeted to your interests. Most cookies 
+          are &quot;session cookies&quot;, meaning that they are automatically deleted from 
+          your hard drive at the end of a session. You are always free to decline 
+          our cookies if your browser permits.
+            
+          We use a third party advertising company, to serve ads on our behalf across
+          the Internet. The third party may also collect anonymous information about
+          your visits to our Web site. This is primarily accomplished through the use
+          of a technology device, commonly referred to as a Web beacon or an action
+          tag, which we place on various Web pages within our Web site or in a html
+          e-mail that allows Atlas DMT to collect anonymous information. Atlas DMT
+          may use information about your visits to this and other Web sites in order
+          to provide ads about goods and services of interest to you. If you would
+          like more information about this practice and to know your choices about
+          not having this information used by the third party.
+               
+     3. Our Use of Your Information.
+          We use information in the files we maintain about you, and the other infor-
+          mation we obtain from your current and past activities on the Websites
+          to resolve disputes, troubleshoot problems and enforce our Terms and 
+          Conditions. At times, we may look across multiple members to identify
+          problems or resolve disputes, and in particular we may examine your infor-
+          mation to identify members multiple Member ID No. or aliases.
+
+          You agree that we may use personally identifiable information about you
+          to improve our marketing and promotional efforts, to analyze site usage,
+          improve our content and product offerings, and customize our Site's content,
+          layout, and services. These uses improve our site and better tailor it to
+          meet your needs.
+
+          You agree that we may use your information to contact you and deliver 
+          information to you that, in some cases, are targeted to your interests,
+          such as targeted banner advertisements, administrative notices, product
+          offerings, and communications relevant to your use on the Websites. By
+          accepting this Privacy Policy, you expressly agree to receive this infor-
+          mation. If you do not wish to receive these communications, we encourage
+          you to opt out of the receipt of certain communications by visiting the
+          Membership Services section of our website or send an e-mial at Contact Us. 
+
+     4. Our Disclosure of Your Information
+          Due to the existing regulatory environment, we cannot ensure that all of
+          your private communications and other personally identifiable information
+          will never be disclosed in ways not otherwise described in this Privacy
+          Policy. By way of example (without limiting and foregoing), we may be forced
+          to disclose information to the government, law enforcement agencies or third
+          parties under certain circumstances, third parties may unlawfully intercept
+          or access transmissions or private communications, or members may abuse or
+          misuse your information that they collect from our Websites. Therefore,
+          although we use industry standard practices to protect your privacy, we do
+          not promise, and you should not expect, that your personally identifiable
+          information or private communications will always remain private.
+
+          As a matter of policy, we do not sell or rent any personally identifiable
+          information about you to any third party. However, the following describes
+          some of the ways that your personally identifiable information may be
+          disclosed.
+
+          Financial Information. Under some circumstances we may require some 
+          additional information, such as, but not limited to credit card details.
+          We use this financial information, including your name, address, and
+          other information, as well as to bill you for use of our services. 
+          We use your financial information to check your qualifications, to 
+          bill you for services and/or products, to enable you to participate
+          in discount, rebate and similar programs in which you may elect to 
+          participate. By making a purchase, or engaging in any other kind of 
+          activity or transaction that uses financial information, on the 
+          Websites, you consent to our providing of your financial information
+          to our service providers and to such third parties as we determine are
+          necessary to support and process your activities and transactions, as
+          well as to your credit card issuer for their purposes. These third
+          parties may include the credit card companies and banking institutions
+          used to process and support the transaction or activity. By purchasing,
+          or registering or making reservations for, products or services of 
+          third parties offered on the Websites, or by participating in programs
+          offered on the Websites that are administered by third parties and that
+          require you to submit financial information in order to use them, you
+          also consent to our providing your financial information to those third
+          parties. Any of these various third parties may be authorized to use
+          your financial information in accordance with our contractual arrange-
+          ments with such third parties and in accordance with their own privacy
+          policies, over which we have no control, and you agree that we are not
+          responsible or liable for any of their actions or omissions. Addition-
+          ally, you agree that we may use and disclose all such information so
+          submitted to such third parties in the same manner in which we are
+          entitled to use and disclose any other information that you submit to us.
+
+          Advertisers. We aggregate (gather up data across all our members' accounts)
+          personally identifiable information and disclose such information in a
+          non-personally identifiable manner to advertisers and other third parties
+          for other marketing and promotional purposes. However, in these situa-
+          tions, we do not disclose to these entities any information that could 
+          be used to identify you personally. Certain information, such as your 
+          name, email address, password, credit card number and bank account
+          number, are never disclosed to marketing advertisers. We may use third-
+          party advertising companies to serve ads on our behalf. These companies
+          may employ cookies and action tags (also known as single pixel gifs or
+          web beacons) to measure advertising effectiveness. Any information that
+          these third parties collect via cookies and action tags is completely 
+          anonymous.
+
+          External Service Providers. There may be a number of services offered by
+          external service providers that help you use our Websites. If you choose
+          to use these optional services, and in the course of doing so, disclose
+          information to the external service providers, and/or grant them permis-
+          sion to collect information about you, then their use of your information
+          is governed by their private policy.
+
+          Other Corporate Entities. We share much of our data, including personally
+          identifiable information about you, with our parent, affiliates, subsidi-
+          aries and joint ventures that are committed to serving your online
+          needs and related services, throughout the world. To the extent that
+          these entities have access to your information, they will treat it at
+          least as protectively as they treat information they obtain from their
+          other members. Our parent, affiliates, subsidiaries and joint ventures
+          will follow privacy practices no less protective of all members than our
+          practices described in this document, to the extent allowed by applicable
+          law. It is possible that MatchNet, its subsidiaries, joint ventures, or
+          any combination of such, could merge with or be acquired by another busi-
+          ness entity. Should such a combination occur, you should expect that
+          APC, Inc. would share some or all of your information in order to continue
+          to provide the service. You will receive notice of such event (to the
+          extent it occurs) and we will require that the new combined entity follow
+          the practices disclosed in this Privacy Policy.
+
+          Legal Requests. APC, Inc. cooperates with law enforcement inquiries, as well
+          as other third parties to enforce laws, such as: intellectual property 
+          rights, fraud and other rights. We can (and you authorize us to) disclose
+          any information about you to law enforcement and other government officials
+          as we, in our sole discretion, believe necessary or appropriate, in con-
+          nection with an investigation of fraud, intellectual property infringements,
+          or other activity that is illegal or may expose us or you to legal liability.
+               
+     5. Your Use of other Members Information.
+          Our services also include access to instant messaging and chat rooms. As a
+          member you have access to the Members ID No., and you might gain access to
+          other contact information of the Member(s) through the regular use of the
+          instant messaging and chat rooms. By accepting this Privacy Policy, you agree
+          that, with respect to other Members' personally identifiable information that
+          you obtain through instant messaging communication, the chat rooms and email,
+          MatchNet hereby grants to you a license to use such information only for: 
+         (a) MatchNet related communications that are not unsolicited commercial 
+             messages, and 
+         (b) any other purpose that such member expressly agrees to after adequate
+             disclosure of the purpose(s). In all cases, you must give Members an
+             opportunity to remove themselves from your database and a chance to
+             review what information you have collected about them. 
+             In addition, under no circumstances, except as defined in this Section,
+             can you disclose personally identifiable information about another member
+             to a third party without our consent and the consent of such other member
+             after adequate disclosure. MatchNet and our members do not tolerate spam.
+             Therefore, without limiting the foregoing, you are not licensed to add a
+             NiceorSpice member, to your mail list (email or physical mail) without 
+             their express written consent after adequate disclosure. To report spam 
+             from other NiceorSpice members, please Contact Us.
+       
+     6. Accessing, Reviewing and Changing Your Profile.
+          Following registration, you can review and change the information you 
+          submitted during registration through the Member Service Menu including: 
+          Your password and e-mail address. If you change your password and email we
+          keep track of your old password and email. You can also change your regist-
+          ration information such as: name, address, city, state, zip code, country,
+          phone number, profile, likes and dislikes, desired date profile, essays and
+          saves search criteria.  Upon your written request, we will suspend your
+          membership, contact information, and financial information from our active
+          databases. Such information will be suspended as soon as reasonably possible
+          in accordance with our suspension policy and applicable law.
+
+          We will retain our files information you have requested to remove in order
+          in some circumstances, such as to resolve disputes, troubleshoot problems
+          and enforce our terms and conditions. Further, such prior information is
+          never completely removed from our databases due to technical and legal
+          constraints, including stored 'back up' systems. Therefore, you should not
+          expect that all of your personally identifiable information will be comp-
+          letely removed from our databases in response to your requests.
+       
+     7. Control of Your Password
+          You are responsible for all actions taken with your member ID No. and pass-
+          word, including fees. Therefore we do not recommend that you disclose your
+          NiceorSpice password or member ID No. to any third parties. If you choose
+          to share your member ID No and password or your information with third
+          parties to provide you additional services, you are responsible for all
+          actions taken with your member ID No. and password and therefore should
+          review that third party's privacy policy. If you lose control of your 
+          password, you may lose substantial control over your personally identi-
+          fiable information and may be subject to legally binding actions taken 
+          on your behalf. Therefore, if your password has been compromised for any
+          reason, you should immediately change your password.
+   
+     8. Other Information Collectors
+          Except as otherwise expressly included in this Privacy Policy, this
+          document only addresses the use and disclosure of information we collect
+          from you. To the extent that you disclose your information to other parties,
+          whether they are on our Websites or on other sites throughout the Internet,
+          different rules may apply to their use or disclosure of the information you
+          disclose to them. To the extent that we use third party advertisers, they
+          adhere to their own privacy policies. Since NiceorSpice does not control the
+          privacy policies of the third parties, you are subject to ask questions
+          before you disclose your personal information to others.
+
+     9. Security
+          NiceorSpice uses industry standard practices to safeguard the confident-
+          iality of your personal identifiable information, including &quot;firewalls&quot; 
+          and Secure Socket Layers. NiceorSpice treats data as an asset that must
+          be protected against loss and unauthorized access. We employ many 
+          different security techniques to protect such data from unauthorized 
+          access by members inside and outside the company. However, &quot;perfect 
+          security&quot; does not exist on the Internet.
+
+    10. Notice
+          We may change this Privacy Policy from time to time based on your comments
+          and our need to accurately reflect our data collection and disclosure 
+          practices. All changes to this policy are effective after we provide you
+          with at least (30) days' notice of changes by sending email to members. 
+          We provide you with (30) days' notice to allow you the opportunity to 
+          notify NiceorSpice if you do not agree to such changes.
+
+
+                   </pre>
+          </div>
+</div>
+        <p>&nbsp;</p>
+    <p class="style53">.<span class="style56">.....</span><span class="style55">Privacy Statement </span>
+</body>
+
+</html>
